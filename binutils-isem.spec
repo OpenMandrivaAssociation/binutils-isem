@@ -1,16 +1,15 @@
-%define name	binutils-isem
-%define version	%(rpm -q --queryformat "%{VERSION}" cross-sun4-binutils)
-%define release	%mkrel 1
-
-Summary:	GNU Binary Utility Development Utilities for tkisem
-Name:		%{name}
-Version:	%{version}
-Release:	%{release}
-License:	GPL
-Group:		Development/Other
-Buildroot:	%{_tmppath}/%{name}-%{version}-%{release}-root
-Requires:	cross-sun4-binutils
-BuildRequires:	cross-sun4-binutils 
+Name:           binutils-isem
+Version:        2.17.50.0.9
+Release:        %mkrel 1
+Epoch:          0
+Summary:        GNU Binary Utility Development Utilities for tkisem
+URL:            http://qa.mandriva.com/
+License:        GPL
+Group:          Development/Other
+Requires:       cross-sun4-binutils = %{version}
+BuildRequires:  cross-sun4-binutils = %{version}
+BuildArch:      noarch
+BuildRoot:      %{_tmppath}/%{name}-%{version}-%{release}-root
 
 %description
 This package simply provides symlinks from %{_bindir}/sun4-linux-as and 
@@ -32,6 +31,9 @@ symlinks are needed for the tkisem package.
 This package simply provides symlinks from %{_bindir}/sun4-linux-as and 
 %{_bindir}/sun4-linux-ld to isem_as and isem_ld, respectively. These 
 symlinks are needed for the tkisem package.
+
+While it is true that tkisem could be modified to use the binaries
+directly, this makes it easier to match upstream code and documentation.
 EOF
 
 %clean
