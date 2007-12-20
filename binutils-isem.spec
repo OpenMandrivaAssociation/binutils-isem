@@ -9,6 +9,7 @@ Group:          Development/Other
 Requires:       cross-sun4-binutils = %{version}
 BuildRequires:  cross-sun4-binutils = %{version}
 BuildArch:      noarch
+BuildRoot:      %{_tmppath}/%{name}-%{version}-%{release}-root
 
 %description
 This package simply provides symlinks from %{_bindir}/sun4-linux-as and 
