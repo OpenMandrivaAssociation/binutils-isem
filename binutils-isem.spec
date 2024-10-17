@@ -3,7 +3,7 @@ Version:        2.17.50.0.9
 Release:        %mkrel 5
 Epoch:          0
 Summary:        GNU Binary Utility Development Utilities for tkisem
-URL:            http://qa.mandriva.com/
+URL:            https://qa.mandriva.com/
 License:        GPL
 Group:          Development/Other
 Requires:       cross-sun4-binutils = %{version}
