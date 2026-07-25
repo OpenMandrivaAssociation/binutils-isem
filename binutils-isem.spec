@@ -1,6 +1,6 @@
 Name:           binutils-isem
 Version:        2.17.50.0.9
-Release:        %mkrel 5
+Release:        6
 Epoch:          0
 Summary:        GNU Binary Utility Development Utilities for tkisem
 URL:            https://qa.mandriva.com/
